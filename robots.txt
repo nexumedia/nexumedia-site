@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /gdpr.html
+
+Sitemap: https://nexumedia.ro/sitemap.xml
