@@ -237,24 +237,17 @@
       <span class="g-icon">🛡️</span>
       <div><strong>Garanție 90 de zile</strong> — rezultate măsurabile sau îți returnăm banii.</div>
     </div>
-    <div class="contact-form" id="contactForm">
+    <form class="contact-form" id="contactForm">
       <div class="form-row">
         <div class="form-group">
           <label for="name">Numele tău</label>
-          <input type="text" id="name" placeholder="Ion Popescu" required>
-        </div>
-        <div class="form-group">
-          <label for="business">Afacerea ta</label>
-          <input type="text" id="business" placeholder="Clinica Dr. Popescu" required>
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="ion@exemplu.ro" required>
-      </div>
-      <div class="form-group">
-        <label for="city">Orașul tău</label>
-        <input type="text" id="city" placeholder="Focșani, Vrancea">
+         <input type="text" id="name" name="name" placeholder="Ion Popescu" required>
+
+<input type="text" id="business" name="business" placeholder="Clinica Dr. Popescu" required>
+
+<input type="email" id="email" name="email" placeholder="ion@exemplu.ro" required>
+
+<input type="text" id="city" name="city" placeholder="Focșani, Vrancea" required>
       </div>
       <div class="form-group">
         <label for="industry">Domeniu de activitate</label>
@@ -334,7 +327,7 @@
       city:     city || 'Nespecificat',
       domain:   domain || 'Nespecificat',
       message:  message || 'Fără mesaj suplimentar.',
-      to_email: 'rolandpalaghia@gmail.com'
+      to_email: 'dany@nexumedia.ro'
     };
 
     try {
@@ -374,4 +367,4 @@
   }
 </script>
 </body>
-</html>
+</form>
