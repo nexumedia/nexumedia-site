@@ -436,14 +436,7 @@ footer a:hover { color: var(--pink); }
         btn.disabled = false;
         btn.textContent = 'Vreau apelul gratuit →';
 
-        var code = err && err.status ? err.status : 0;
-        if (code === 400) {
-          showError('Date invalide. Verifică câmpurile și încearcă din nou.');
-        } else if (code === 429) {
-          showError('Prea multe cereri. Încearcă din nou în câteva minute.');
-        } else {
-          showError('Ceva nu a funcționat. Încearcă din nou sau scrie-ne la dany@nexumedia.ro');
-        }
+showError('Eroare EmailJS: ' + JSON.stringify(err));
       });
   }
 
